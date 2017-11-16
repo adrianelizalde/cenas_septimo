@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+  <head>
+    <title>SEPTIMO</title>
+    <link rel= "stylesheet" href= "styles.css">
+  </head>
+
+  <body>
+    <h1 class= "name1">Al matao total que le toca recoger es...</h1>
+        <script src="random.js"></script>
+
+    <h3> Número de veces cocinadas <h3>
+      <ul>
+        <li>adrian 2</li>
+        <li>camaleonte 1</li>
+        <li>diodoro 2</li>
+        <li>gaminde 2</li>
+        <li>jimeno 1</li>
+        <li>lozano 1</li>
+        <li>nil 1</li>
+        <li>pepe 2</li>
+        <li>ramon 1</li>
+        <li>rober 1</li>
+        <li>spirlo 1</li>
+        <li>victor 2</li>
+      </ul>
+
+    <h3> Exentos <h3>
+      <ul>
+        <li>carlos</li>
+        <li>chechi</li>
+        <li>maria</li>
+      </ul>
+
+  </body>
+
+
+</html>

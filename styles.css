@@ -1,0 +1,294 @@
+/*
+COMO SEPARAR ARCHIVOS EN HTML
+COMO COLOCAR DOS IMAGENES JUNTAS DE DISTINTO TAMAÑO CON MISMA ALTURA
+COMO CENTRAR TITULO EN THUMBNAILS
+*/
+
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  background: black;
+  color: white;
+}
+
+
+/*HEADER*/
+
+header {
+  display: block;
+  width: 92%;
+  margin: auto;
+  padding: 0;
+  padding-left: 8px;
+  padding-right: 8px;
+  /*border: 2px solid red; !* cajas *!*/
+}
+
+.nav1 {
+  float: left;
+  margin-top: 12px;
+  text-align: left;
+  z-index: 1;
+  /*border: 2px solid red; !* cajas *!*/
+}
+
+.name, .name1 {
+  float: left;
+  text-align: left;
+  padding: 0;
+  margin: 0;
+  font-size: 100px;
+  font-weight: 100px;
+  color: white;
+  z-index: 1;
+  /*border: 2px solid red; !* cajas *!*/
+}
+
+.name1 {
+  color: black;
+  -webkit-text-fill-color: black; /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: white;
+}
+
+.nav li {
+  /*border: 2px solid red; !* cajas *!*/
+}
+
+.texto-panel {
+  text-decoration: none;
+  color: white;
+  /*border: 2px solid red; !* cajas *!*/
+}
+.texto-panel:hover {
+  color: white;
+  /*border: 2px solid red; !* cajas *!*/
+}
+
+.nav2 {
+  float: right;
+  padding: 18px 0px 0px 0px;
+  font-size: 22px;
+  font-weight: light;
+  text-align: right;
+  z-index: 1;
+  list-style-type: none;
+  /*border: 2px solid red; !* cajas *!*/
+}
+
+
+/*MAIN*/
+
+main {
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  width: 100%;
+}
+
+.container-fluid {
+  width: 92%;
+  margin: auto;
+}
+
+
+.thumb1 {
+  float: left;
+  width: 50%;
+  margin: auto;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-bottom: 16px;
+}
+
+.project_item {
+  position: relative;
+}
+
+.project_item:hover > .thumb_title {
+  opacity: 1;
+  transition: .3s;
+}
+
+.project_item img {
+  display: block;
+  margin: 0 auto;
+  opacity: 0.3;
+}
+
+.project_item:hover > img {
+  opacity: 1;
+  transition: 0.9s;
+}
+
+.thumb_title {
+  width: 100%;
+  text-align: center;
+  opacity: 0;
+  text-transform: uppercase;
+}
+
+.thumb_title h1 { /*.este método sólo funciona si hay un width y height fijados en px o em*/
+  position: absolute;
+  top: calc(50% - 0.5em); /* Halfway from the top - half of the height of the text   */
+  left: calc(50% - 5em); /* Halfway from the left - half of the width of the text   */
+  font-size: 1em;
+  width: 10em;
+  height: 1em;
+  color: black;
+}
+
+
+  /*VICTOR
+
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  z-index: 10;
+  opacity: 0;
+  text-transform: uppercase;
+  color: black;
+  text-align: center;*/
+
+/* como centrar texto en medio. si añado height=1em se centra pero entonces el cursor solo reacciona cuando pasas por encima del texto */
+
+
+
+/*DENTRO DEL PROYECTO*/
+
+.container-images {
+  width: 100%;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.col1 {
+}
+
+.col2 {
+}
+
+.col3 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.col3-flex {
+  margin-right: auto;
+}
+
+.col4-flex {
+}
+
+.img_float3, .img_float4 {
+  width: 100%;
+}
+
+.text_project {
+  color: white;
+  margin: auto;
+  text-align: center;
+  margin: 100px 0px 100px 0px;
+}
+
+.img_float1 {
+    float: left;
+    width: 49.5%;
+    margin: auto;
+    padding-top: 0.5%;
+}
+
+.img_float2 {
+    float: right;
+    width: 49.5%;
+    margin: auto;
+    padding-top: 0.5%;
+}
+
+
+
+
+/*INFO*/
+
+.text-col {
+  display: inline-block;
+  float: left;
+  width:25%;
+  margin: auto;
+  padding-left: 8px;
+  padding-right: 8px;
+  letter-spacing: 1.2;
+  line-height: 1.3;
+  margin-top: 20px;
+}
+
+
+/*FLOATS*/
+
+.group:after {
+  clear:both;
+  content:"";
+  display:table;
+}
+
+
+/*MEDIA QUERIES*/
+
+@media only screen and (max-width: 768px) {
+
+  .name, .name1 {
+    font-size: 50px;
+  }
+
+  .nav2 {
+    font-size: 12px;
+    padding: 8px 0px 0px 0px;
+    /*border: 2px solid red; !* cajas *!*/
+  }
+
+  .text_project {
+    font-size: 15px;
+    margin: 40px 0px 40px 0px;
+  }
+
+  .thumb1 {
+    float: none;
+    width: 100%;
+    margin: auto;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-bottom: 16px;
+  }
+}
+
+@media only screen and (max-width: 408px) {
+
+  .name, .name1 {
+    font-size: 30px;
+  }
+
+  .nav2 {
+    font-size: 8px;
+    padding: 2px 0px 0px 0px;
+    /*border: 2px solid red; !* cajas *!*/
+  }
+
+  .text_project {
+    font-size: 7px;
+    margin: 20px 0px 20px 0px;
+  }
+
+}
