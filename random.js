@@ -87,4 +87,10 @@ $(document).ready(function() {
   var text = "<h1>"+cleaner1.name+"</h1>";
   text += "<h1>"+cleaner2.name+"</h1>";
   $('.cleaner-selector').html(text);
+
+  // Times cooked list
+  members.forEach(function(member) {
+    text = "<li>"+member.name+" "+member.times_cooked+"</li>";
+    $('.times-cooked-list').append(text);
+  });
 })
