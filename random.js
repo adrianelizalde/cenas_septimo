@@ -88,6 +88,7 @@ $(document).ready(function() {
   text += "<h1>"+cleaner2.name+"</h1>";
   $('.cleaner-selector').html(text);
 
+
   // Times cooked list
   members.forEach(function(member) {
     text = "<li>"+member.name+" "+member.times_cooked+"</li>";
