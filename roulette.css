@@ -1,0 +1,40 @@
+/**{margin:0;padding: 0;}*/
+/*.row{ position: relative;}
+.row:after{ content: "";clear: both;display: block;}*/
+
+.cleaner-slot {
+  margin-bottom: 40px;
+}
+.cleaner-slot ul {
+  margin: 0;
+  padding: 0;
+}
+
+.cleaner-slot ul {
+  position: relative;
+  margin-top: -250px;
+}
+.cleaner-slot ul li {
+  width: 250px;
+  height:250px;
+  list-style: none;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.active {
+  background-color: yellow;
+}
+
+.slot-container {
+  display: inline-block;
+}
+.slot-box {
+  position:relative;
+	width: 250px;
+  height: 250px;
+	border: 2px solid;
+	overflow: hidden;
+  margin-bottom: 10px;
+}
