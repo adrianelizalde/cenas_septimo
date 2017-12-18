@@ -3,27 +3,50 @@
   <head>
     <title>SEPTIMO</title>
     <script
-      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-      integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g="
+      src="https://code.jquery.com/jquery-2.2.4.min.js"
+      integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
       crossorigin="anonymous"></script>
     <script src="random.js"></script>
+    <script src="roulette.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Rye" rel="stylesheet">
+    <link rel="stylesheet" href="roulette.css">
     <link rel="stylesheet" href="styles.css">
   </head>
 
   <body>
-    <div class='container-fluid'>
-      <h1 class="name1">Al matao total que le toca recoger es...</h1>
-      <div class='cleaner-selector'></div>
+    <div class='container-fluid main-container'>
+      <h1 class='main-title'>LA RULETA DEL SÉPTIMO</h1>
+      <br/>
+      <div class='cleaner-slot'>
+        <div class="row">
+          <div class='slot-container'>
+          	<div id="slot-box1" class="slot-box">
+          		<ul></ul>
+          	</div>
+            <button id="slot-button1" class='button -blue'>Dale!</button>
+          </div>
 
-      <h3>Número de veces cocinadas<h3>
+          <div class='slot-container'>
+            <div id="slot-box2" class="slot-box">
+              <ul></ul>
+            </div>
+            <button id="slot-button2" class='button -blue'>Dale!</button>
+          </div>
+
+        </div>
+        <br />
+      </div>
+
+      <h2>Número de veces cocinadas</h2>
       <ul class='times-cooked-list'></ul>
 
-      <h3>Exentos<h3>
+      <h3>Exentos</h3>
       <ul>
         <li>carlos</li>
         <li>chechi</li>
         <li>maria</li>
       </ul>
     </div>
+
   </body>
 </html>
